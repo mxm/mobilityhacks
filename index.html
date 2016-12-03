@@ -19,6 +19,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+
   </head>
 
   <body>
@@ -57,13 +64,13 @@
         <div class="col-xs-12" style="height:20px;"></div>
 
         <div class="col-xs-12">
-
-          <select class="selectpicker" style="width:100%">
-            <option disabled selected>Please select an application</option>
-            <option>SlapApp</option>
-            <option>KaraokeApp</option>
-            <option>SilentApp</option>
-          </select>
+          <div class="row">
+            <select class="selectpicker" multiple title="Please select an application" data-width="100%">
+              <option>SlapApp</option>
+              <option>KaraokeApp</option>
+              <option>SilentApp</option>
+            </select>
+          </div>
         </div>
 
 
