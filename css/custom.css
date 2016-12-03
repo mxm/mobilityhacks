@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #50B4AC;
+ }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #50B4AC;
+}
+
+.btn-success {
+	color: #fff;
+	background-color: #A0C54F;
+	border-color: #A0C54F;
+}
