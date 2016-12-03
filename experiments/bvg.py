@@ -14,7 +14,6 @@ generic_opts = {
     'format' : 'json',
 }
 
-
 def pretty_print(json_string):
     print(json.dumps(json_string, indent=2, separators=(',', ': ')))
 
@@ -44,10 +43,23 @@ print(kotti)
 
 print("---")
 
+query = make_query("trip", {
+    'originExtId' : hermann_id,
+    'destExtId' : kotti,
+    'date' : '2016-12-05',
+    'time' : '14:00'
+})
 
 pretty_print(
-    make_query("trip", {
-        'originExtId' : hermann_id,
-        'destExtId' : kotti
-    })
+    query
 )
+
+print("har")
+
+destination = query['Trip'][0]['LegList']['Leg'][0]['Destination']
+print(destination['name'])
+print(destination['time'])
+
+origin = query['Trip'][0]['LegList']['Leg'][0]['Origin']
+print(origin['name'])
+print(origin['time'])

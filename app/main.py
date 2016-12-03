@@ -6,6 +6,8 @@ static_root = "./static"
 
 @app.route('/query/<name>/<start>/<end>/<date>/<time>/<app>')
 def request(**params):
+    # start requesting
+
     return template("request_template.html", params)
 
 @app.route('/')
