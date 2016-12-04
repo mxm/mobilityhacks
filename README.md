@@ -6,6 +6,8 @@ Average occupancy of passenger vehicles in Europe is 1.5 persons. This means too
 
 Our platform (ZipYaTrip) connects people who are traveling the same route, it also breaks the barrier between them, so they can interact, get to know each other, and be productive together. ZipYaTrip connects people for travel pooling and provides activities while traveling.
 
+## Screenshots
+
 ![](shots/androidmobile1.png)
 ![](shots/androidmobile2.png)
 ![](shots/androidmobile3.png)
