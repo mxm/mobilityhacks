@@ -59,12 +59,19 @@ def journey(start, end, start_date, start_time):
 
     #print("har")
 
-    origin = query['Trip'][0]['LegList']['Leg'][0]['Origin']
+    legs =  query['Trip'][0]['LegList']['Leg']
+
+    origin = legs[0]['Origin']
     #print(origin['name'])
     #print(origin['time'])
 
-    last_entry = query['Trip'][0]['LegList']['Leg'].__len__() - 1
-    destination = query['Trip'][0]['LegList']['Leg'][last_entry]['Destination']
+    num_legs = legs.__len__()
+    intermediate = []
+    for i in range(1, num_legs):
+        intermediate.append(legs[i]['Origin']['name'])
+
+    last_entry = num_legs - 1
+    destination = legs[last_entry]['Destination']
     #print(destination['name'])
     #print(destination['time'])
 
@@ -72,6 +79,7 @@ def journey(start, end, start_date, start_time):
        'start' : origin['name'],
        'start_date' : origin['date'],
        'start_time' : origin['time'],
+       'intermediate' : intermediate,
        'end' : destination['name'],
        'end_date' : destination['date'],
        'end_time' : destination['time']
