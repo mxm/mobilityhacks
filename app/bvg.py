@@ -30,21 +30,21 @@ def journey(start, end, start_date, start_time):
     query = make_query(locationEndpoint, {
         'input' : start
     })
-    pretty_print(query['stopLocationOrCoordLocation'][0])
+    #pretty_print(query['stopLocationOrCoordLocation'][0])
 
     hermann_id = query['stopLocationOrCoordLocation'][0]['StopLocation']['extId']
-    print(hermann_id)
+    #print(hermann_id)
 
 
     query = make_query(locationEndpoint, {
         'input' : end
     })
-    pretty_print(query['stopLocationOrCoordLocation'][0])
+    #pretty_print(query['stopLocationOrCoordLocation'][0])
 
     kotti = query['stopLocationOrCoordLocation'][0]['StopLocation']['extId']
-    print(kotti)
+    #print(kotti)
 
-    print("---")
+    #print("---")
 
     query = make_query("trip", {
         'originExtId' : hermann_id,
@@ -53,20 +53,20 @@ def journey(start, end, start_date, start_time):
         'time' : start_time
     })
 
-    pretty_print(
-        query
-    )
+    #pretty_print(
+    #    query
+    #)
 
-    print("har")
+    #print("har")
 
     origin = query['Trip'][0]['LegList']['Leg'][0]['Origin']
-    print(origin['name'])
-    print(origin['time'])
+    #print(origin['name'])
+    #print(origin['time'])
 
     last_entry = query['Trip'][0]['LegList']['Leg'].__len__() - 1
     destination = query['Trip'][0]['LegList']['Leg'][last_entry]['Destination']
-    print(destination['name'])
-    print(destination['time'])
+    #print(destination['name'])
+    #print(destination['time'])
 
     return {
        'start' : origin['name'],
