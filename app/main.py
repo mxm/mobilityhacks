@@ -13,10 +13,10 @@ def pool_matching():
         input = request.query
         params = journey(input['start'], input['end'], input['date'], input['time'])
         params['app'] = input['app']
-        params['num_people'] = randint(1, 4)
+        params['num_people'] = randint(1, 5)
         return template("request_template.html", params)
     except:
-        return home()
+        return home(error=True)
 
 @app.route('/')
 def home(error=False):
