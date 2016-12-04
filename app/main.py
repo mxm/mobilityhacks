@@ -8,15 +8,18 @@ static_root = "./static"
 
 @app.route('/query')
 def pool_matching():
-    input = request.query
     # start requesting
-    params = journey(input['start'], input['end'], input['date'], input['time'])
-    params['app'] = input['app']
-    params['num_people'] = randint(1, 4)
-    return template("request_template.html", params)
+    try:
+        input = request.query
+        params = journey(input['start'], input['end'], input['date'], input['time'])
+        params['app'] = input['app']
+        params['num_people'] = randint(1, 4)
+        return template("request_template.html", params)
+    except:
+        return home()
 
 @app.route('/')
-def home():
+def home(error=False):
     return static_file("index.html", root=static_root)
 
 @app.route('/<filepath:path>')
