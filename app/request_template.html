@@ -57,14 +57,13 @@
 
       <div class="jumbotron">
         <!--<h2>Search for a Ride</h2>-->
-        <h3>Travel pooling.</h3>
-        <h4 style="font-size: 20px;">Make it your way: social, fun, playful and appealing!</h4>
+        <h3>Matching complete.</h3>
+        <h4 style="font-size: 20px;">We have found {{ num_people }} people who match your request.</h4>
+        <div class="col-xs-12" style="height:20px;"></div>
 
-        {{name}}
-        {{start}}
-        {{end}}
-        {{date}}
-        {{time}}
+        <h4>Your pooling leaves {{start}} at {{start_date}} {{start_time}}</h4>
+        <h4>Your pooling arrives {{end}} at {{end_date}} {{end_time}}</h4>
+
         {{app}}
 
       </div>

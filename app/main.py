@@ -1,13 +1,18 @@
-from bottle import Bottle, run, static_file, template
+from bottle import Bottle, run, static_file, template, request
+from bvg import journey
+from random import randint
 
 app = Bottle()
 
 static_root = "./static"
 
-@app.route('/query/<name>/<start>/<end>/<date>/<time>/<app>')
-def request(**params):
+@app.route('/query')
+def pool_matching():
+    input = request.query
     # start requesting
-
+    params = journey(input['start'], input['end'], input['date'], input['time'])
+    params['app'] = input['app']
+    params['num_people'] = randint(1, 4)
     return template("request_template.html", params)
 
 @app.route('/')
