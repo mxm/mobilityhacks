@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.0.1_d00d7d3aaa127578c7f41151fafa823ceed5f9ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hezarfener\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.1_b0e8bf4e54212c08ba663d429cd0fa738cfb0e07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.1_3705daff0fca7fb6ab6d5f31e8ea8bbe6293bf34\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.1_ec3e49e9f1a788ec6fd4fc191949aaf12568031b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="04370b75c40c2b034595f62b445a009edc17f0e1">
+        <dex dex="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d116d697d99b0e55167a1b8b946b6c8b6f2cd36f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.1_6ed08a2de59bd8c83ffc0e267ad45dab8f5adc05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6dda6a90252a31804cdcae90a8cd3233dcb1cd24">
+        <dex dex="C:\Users\Hezarfener\AndroidStudioProjects\ZipYaTrip3\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8128694c38fc833460b2de80de786e3be7e170ea\classes.dex" />
+    </item>
+
+</items>
